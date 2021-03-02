@@ -16,6 +16,7 @@ build() {
 build base
 build master
 build worker
+build history-server
 build submit
 build java-template template/java
 build scala-template template/scala
