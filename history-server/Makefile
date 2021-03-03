@@ -41,7 +41,7 @@ run: build
 	cd $(MAKEFILE_PATH) && $(DOCKER_COMPOSE) logs
 
 build: FORCE
-	cd $(MAKEFILE_PATH) && ./build.sh
+	cd $(MAKEFILE_PATH)/.. && ./build.sh
 
 clean: FORCE
 	cd $(MAKEFILE_PATH) && $(DOCKER_COMPOSE) down
